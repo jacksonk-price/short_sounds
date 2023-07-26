@@ -1,4 +1,18 @@
 #volumeSlider {
 	position: absolute;
+	top: 10rem;
+	right: -4rem;
+	margin-left: 4rem;
+	transform: rotate(90deg);
 	z-index: 9999;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+#volumeSlider:hover {
+	opacity: 1;
+}
+
+.html5-video-player:hover + #volumeSlider {
+	opacity: 1;
 }

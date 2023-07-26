@@ -3,7 +3,7 @@
     "name": "ShortSounds",
     "description": "A Chrome extension that allows you to adjust the volume of YouTube shorts",
     "version": "1.0",
-    "permissions": ["activeTab", "scripting", "tabs"],
+    "permissions": ["activeTab", "scripting", "tabs", "storage"],
     "content_scripts": [{
             "matches": ["https://www.youtube.com/*"],
             "js": ["src/javascript/content.js"],
